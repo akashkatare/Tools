@@ -15,15 +15,15 @@ A complete setup guide for essential tools used in iOS application security test
 
 - 🔗 [Sideloadly](https://sideloadly.io/#download)
 - Follow below-mentioned steps for fresh installations: (Windows)
-### 🔸 iTunes: Download iTunes
+#### iTunes: Download iTunes
 - https://www.apple.com/itunes/download/win64.
 - Right-click on `iTunes64Setup.exe` and run as administrator.
 
-### 🔸 iCloud: Download iCloud
+#### iCloud: Download iCloud
 - https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe.
 - Right-click on `iCloudSetup.exe` and run as administrator.
 
-### 🔸 Install Sideloadly:
+#### Install Sideloadly:
 - Download Sideloadly
 - https://sideloadly.io/SideloadlySetup64.exe.
 - Right-click on `SideloadlySetup64.exe` and run as administrator.
