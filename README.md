@@ -24,7 +24,7 @@ A complete setup guide for essential tools used in iOS application security test
 
 ## 🧙 TrollStore Setup
 
-Install TrollStore 2 Without Jailbreak on All Devices - Full Guide  
+### 🔸 Install TrollStore 2 Without Jailbreak on All Devices - Full Guide  
 🔗 [TrollStore GitHub Guide](https://github.com/iOSGuides/installing-trollstore)
 
 ### 🔸 On Jailbroken Devices
