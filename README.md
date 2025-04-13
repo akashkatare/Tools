@@ -31,7 +31,10 @@ A complete setup guide for essential tools used in iOS application security test
 - Now, Sideloadly will function properly.
 Note: If you don't have a developer account, register for one. Note that apps installed with a free account will expire after 7 days, requiring a refresh or reinstallation. A paid developer account allows for a 365-day validity.
 
-### 🔸 
+**How many apps can I sideload?**
+- On iOS 7, 8, 9, you can sideload unlimited apps. However, on iOS 10, 11, 12, 13, 14, 15, 16 and higher, a free Apple Developer account is limited to 3 sideloaded apps. A paid Apple Developer Account has no such limit. If you're on iOS 16.1.2 & lower, you can remove these limitations by using WDBRemoveThreeAppLimit.
+
+### 🔸 Troubleshoot
 - if you're experiencing issues installing Sideloadly or using it to install apps, please follow these steps to resolve them:
 - **Uninstall Sideloadly:**
 - Go to  `C:\\Users\\{YourUsername}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Sideloadly` and click on Uninstall.
@@ -43,6 +46,9 @@ Note: If you don't have a developer account, register for one. Note that apps in
 - https://www.voidtools.com/Everything-1.4.1.1026.x86-Setup.exe and install it.
 - **Delete Temporary Sideloadly Files:**
 - Launch Everything, search for Sideloadly, and delete any temporary installation files. Some directories may require administrative access.
+
+For Other issues refer:
+- https://sideloadly.io/#faq
 
 ### 🔹 AltServer (AltStore)
 - 💻 [AltServer for Windows](https://cdn.altstore.io/file/altstore/altinstaller.zip)
