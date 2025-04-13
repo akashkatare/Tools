@@ -14,6 +14,7 @@ A complete setup guide for essential tools used in iOS application security test
 ## 📦 Sideloading Tools
 
 ### 🔸 Follow below-mentioned steps for fresh installations: (Windows)
+Note: For Windows make sure you have the web version of iTunes & iCloud installed. You must uninstall Microsoft Store iTunes & iCloud (if present), then install the non Microsoft Store version from: 
 - **iTunes: Download iTunes**
 - https://www.apple.com/itunes/download/win64.
 - Right-click on `iTunes64Setup.exe` and run as administrator.
