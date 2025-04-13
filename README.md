@@ -137,6 +137,3 @@ uicache -a
 ```
 
 ---
-
-> 📌 Feel free to fork, clone, and contribute to expand this list!  
-> 📬 PRs welcome for new tools, updates, or better repo links.
