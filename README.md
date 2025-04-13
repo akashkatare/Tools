@@ -1,13 +1,12 @@
 # 📱 Essential & Jailbreak Bypass Tools for iOS
 
-This repository lists essential tools and jailbreak detection bypass utilities for iOS, compatible with jailbreaks like **unc0ver**, **Palera1n**, **Dopamine**, **RootHide**, and **Bootstrap**.
+This repository lists essential tools and jailbreak detection bypass utilities for iOS, compatible with jailbreaks like **unc0ver**, **Taurine**, **Palera1n**, **Dopamine**, **Dopamine RootHide**, and **Bootstrap**.
 
 ---
 
 ## 🧰 Essential Tools
 
 <details>
-<summary>Click to expand</summary>
 
 | No. | Tool                          | Repository / Notes |
 |-----|-------------------------------|--------------------|
