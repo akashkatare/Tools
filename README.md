@@ -6,7 +6,7 @@ This repository lists essential tools and jailbreak detection bypass utilities f
 
 ## 🧰 Essential Tools
 
-<details>
+
 
 | No. | Tool                          | Repository / Notes |
 |-----|-------------------------------|--------------------|
@@ -29,7 +29,7 @@ This repository lists essential tools and jailbreak detection bypass utilities f
 | 17  | **TrollDecrypt**              | https://github.com/donato-fiore/TrollDecrypt/releases |
 | 18  | **Flex 3**                    | https://getdelta.co |
 
-</details>
+
 
 ---
 
