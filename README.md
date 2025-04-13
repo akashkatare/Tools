@@ -14,6 +14,23 @@ A complete setup guide for essential tools used in iOS application security test
 ## 📦 Sideloading Tools
 
 - 🔗 [Sideloadly](https://sideloadly.io/#download)
+- Follow below-mentioned steps for fresh installations: (Windows)
+### 🔸 iTunes: Download iTunes
+- https://www.apple.com/itunes/download/win64.
+- Right-click on `iTunes64Setup.exe` and run as administrator.
+
+### 🔸 iCloud: Download iCloud
+- https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe.
+- Right-click on `iCloudSetup.exe` and run as administrator.
+
+### 🔸 Install Sideloadly:
+- Download Sideloadly
+- https://sideloadly.io/SideloadlySetup64.exe.
+- Right-click on `SideloadlySetup64.exe` and run as administrator.
+- Launch Sideloadly:
+- Run Sideloadly as an administrator. It will prompt you to Download Anisette—click "Yes."
+- Now, Sideloadly should function properly.
+Note: If you don't have a developer account, register for one. Note that apps installed with a free account will expire after 7 days, requiring a refresh or reinstallation. A paid developer account allows for a 365-day validity.
 
 ### 🔹 AltServer (AltStore)
 - 💻 [AltServer for Windows](https://cdn.altstore.io/file/altstore/altinstaller.zip)
