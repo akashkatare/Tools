@@ -13,7 +13,7 @@ A complete setup guide for essential tools used in iOS application security test
 
 ## 📦 Sideloading Tools
 
-- Follow below-mentioned steps for fresh installations: (Windows)
+### 🔸 Follow below-mentioned steps for fresh installations: (Windows)
 - **iTunes: Download iTunes**
 - https://www.apple.com/itunes/download/win64.
 - Right-click on `iTunes64Setup.exe` and run as administrator.
@@ -28,8 +28,21 @@ A complete setup guide for essential tools used in iOS application security test
 - Right-click on `SideloadlySetup64.exe` and run as administrator.
 - Launch Sideloadly:
 - Run Sideloadly as an administrator. It will prompt you to Download Anisette—click "Yes."
-- Now, Sideloadly should function properly.
+- Now, Sideloadly will function properly.
 Note: If you don't have a developer account, register for one. Note that apps installed with a free account will expire after 7 days, requiring a refresh or reinstallation. A paid developer account allows for a 365-day validity.
+
+### 🔸 
+- if you're experiencing issues installing Sideloadly or using it to install apps, please follow these steps to resolve them:
+- **Uninstall Sideloadly:**
+- Go to  `C:\\Users\\{YourUsername}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Sideloadly` and click on Uninstall.
+- **Remove iCloud and iTunes:**
+- Open Control Panel > Programs > Programs and Features.
+- Uninstall iCloud and iTunes if they are installed.
+- Check Microsoft Store: Search for "iCloud" and "iTunes." If they appear as installed, uninstall both.
+- **Download Everything Tool:**
+- https://www.voidtools.com/Everything-1.4.1.1026.x86-Setup.exe and install it.
+- **Delete Temporary Sideloadly Files:**
+- Launch Everything, search for Sideloadly, and delete any temporary installation files. Some directories may require administrative access.
 
 ### 🔹 AltServer (AltStore)
 - 💻 [AltServer for Windows](https://cdn.altstore.io/file/altstore/altinstaller.zip)
