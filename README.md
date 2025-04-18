@@ -126,6 +126,57 @@ pip install frida==16.5.1
 
 ---
 
+## 🧠 Frida & Objection Setup
+
+> Make sure you have Python and pip installed.
+
+### 📥 Install:
+
+```bash
+Install USBFluxd
+# Install dependencies
+sudo apt update
+sudo apt install avahi-daemon build-essential git libimobiledevice6 libtool pkg-config python3-dev make usbmuxd
+# Clone the repositories
+git clone https://github.com/libimobiledevice/libplist
+git clone https://github.com/corellium/usbfluxd
+# Make and install libplist
+cd libplist/
+./autogen.sh
+make
+sudo make install
+cd ../
+# Make and install usbfluxd
+cd usbfluxd/
+./autogen.sh
+make
+sudo make install
+cd ../
+
+Running USBFlux:
+# Start the usbmuxd service
+sudo systemctl start usbmuxd
+# Start avahi
+sudo avahi-daemon
+# Run usbfluxd in the foreground
+sudo usbfluxd -f -n
+
+# Install iproxy on linux
+apt-get install libusbmuxd-tools
+Run usbmuxd/iproxy SSH forwarding over USB (Default 2222 -> 22).
+e.g. iproxy 2222 22
+
+**Download frida-ios-dump:**
+git clone https://github.com/AloneMonkey/frida-ios-dump.git
+cd frida-ios-dump
+pip3 install -r requirements.txt
+
+Dump Decrypted IPA fileL:
+./dump.py "DVIA-v2"
+
+```
+
+---
 ## 🧰 Essential Tools for Jailbroken Devices
 
 > These tools support **unc0ver**, **Taurine**, **Palera1n**, **Dopamine**, **RootHide**, etc.
