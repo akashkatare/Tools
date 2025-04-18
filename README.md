@@ -135,7 +135,7 @@ This guide explains how to set up a Linux environment (e.g., Kali) to decrypt an
 
 ```bash
 sudo apt update
-sudo apt install -y avahi-daemon build-essential git libimobiledevice6 \
+sudo apt install -y avahi-daemon build-essential git libimobiledevice-1.0-6 \
 libtool pkg-config python3-dev make usbmuxd libusbmuxd-tools autoconf automake
 ```
 
