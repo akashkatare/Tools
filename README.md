@@ -113,6 +113,17 @@ pip uninstall frida-tools
 pip uninstall objection
 ```
 
+```Troubleshoot
+# Create a virtual environment
+python3 -m venv frida-env
+
+# Activate the virtual environment
+source frida-env/bin/activate
+
+# Install the specific version of frida
+pip install frida==16.5.1
+```
+
 ---
 
 ## 🧰 Essential Tools for Jailbroken Devices
