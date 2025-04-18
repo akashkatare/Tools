@@ -125,56 +125,114 @@ pip install frida==16.5.1
 ```
 
 ---
+# 🧠 How to Get the Decrypted IPA File of Installed iOS Apps
 
-## 🧠 Frida & Objection Setup
+This guide explains how to set up a Linux environment (e.g., Kali) to decrypt and dump IPA files from a **jailbroken iOS device** using `usbfluxd` and `frida-ios-dump`.
 
-> Make sure you have Python and pip installed.
+---
 
-### 📥 Install:
+## 📥 1. Install Dependencies
 
 ```bash
-Install USBFluxd
-# Install dependencies
 sudo apt update
-sudo apt install avahi-daemon build-essential git libimobiledevice6 libtool pkg-config python3-dev make usbmuxd
-# Clone the repositories
+sudo apt install -y avahi-daemon build-essential git libimobiledevice6 \
+libtool pkg-config python3-dev make usbmuxd libusbmuxd-tools autoconf automake
+```
+
+---
+
+## 🛠️ 2. Build & Install `libplist` and `usbfluxd`
+
+```bash
+# Clone the required repositories
 git clone https://github.com/libimobiledevice/libplist
 git clone https://github.com/corellium/usbfluxd
-# Make and install libplist
-cd libplist/
-./autogen.sh
-make
-sudo make install
-cd ../
-# Make and install usbfluxd
-cd usbfluxd/
-./autogen.sh
-make
-sudo make install
-cd ../
 
-Running USBFlux:
-# Start the usbmuxd service
+# Build and install libplist
+cd libplist
+./autogen.sh
+make
+sudo make install
+cd ..
+
+# Build and install usbfluxd
+cd usbfluxd
+./autogen.sh
+make
+sudo make install
+cd ..
+```
+
+---
+
+## 🚀 3. Start Required Services
+
+```bash
+# Start usbmuxd service
 sudo systemctl start usbmuxd
-# Start avahi
+
+# Start Avahi daemon (for mDNS)
 sudo avahi-daemon
-# Run usbfluxd in the foreground
+
+# Run usbfluxd in foreground
 sudo usbfluxd -f -n
+```
 
-# Install iproxy on linux
-apt-get install libusbmuxd-tools
-Run usbmuxd/iproxy SSH forwarding over USB (Default 2222 -> 22).
-e.g. iproxy 2222 22
+> 📝 Keep `usbfluxd` running in the foreground or in a separate terminal window.
 
-**Download frida-ios-dump:**
+---
+
+## 🔁 4. SSH Forwarding Over USB
+
+```bash
+# Forward local port 2222 to device port 22
+iproxy 2222 22
+```
+
+> 💡 Your device must be jailbroken and have **OpenSSH** installed.
+
+---
+
+## 📦 5. Clone and Set Up `frida-ios-dump`
+
+```bash
 git clone https://github.com/AloneMonkey/frida-ios-dump.git
 cd frida-ios-dump
 pip3 install -r requirements.txt
-
-Dump Decrypted IPA fileL:
-./dump.py "DVIA-v2"
-
 ```
+
+---
+
+## 📲 6. Dump the Decrypted IPA File
+
+```bash
+# Replace "AppName" with the actual app name as shown on the device
+./dump.py "AppName"
+```
+
+> Example:
+> ```bash
+> ./dump.py "DVIA-v2"
+> ```
+
+---
+
+## ✅ Notes
+
+- The iOS device must be **jailbroken**.
+- `frida-server` must be **running on the iOS device**, typically launched via SSH.
+- Make sure `usbmuxd` and `usbfluxd` are running properly before starting the dump process.
+- Use tools like `Filza`, `ssh`, or `Netatalk` to check device file structure if needed.
+
+---
+
+## 🔗 Resources
+
+- [usbfluxd – Corellium](https://github.com/corellium/usbfluxd)
+- [frida-ios-dump – AloneMonkey](https://github.com/AloneMonkey/frida-ios-dump)
+- [Frida Project](https://frida.re)
+- [Kali Linux Python Packaging Guide](https://www.kali.org/docs/general-use/python3-external-packages/)
+
 
 ---
 ## 🧰 Essential Tools for Jailbroken Devices
